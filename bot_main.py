@@ -5,10 +5,8 @@ from threading import Thread
 import math
 
 # --- CẤU HÌNH ---
-# Lấy Token từ biến môi trường (Render) hoặc nhập trực tiếp để test
-TOKEN = os.environ.get('BOT_TOKEN') 
-if not TOKEN:
-    TOKEN = 'DÁN_TOKEN_CỦA_BẠN_VÀO_ĐÂY'
+# THAY BẰNG DÒNG NÀY (Nhớ dán token thật vào giữa hai dấu nháy)
+TOKEN = '8560636939:AAGK30Biwo73awkKBloTQwRQkOGsO72Fdb8'
 
 bot = telebot.TeleBot(TOKEN)
 server = Flask(__name__)
@@ -223,3 +221,4 @@ if __name__ == "__main__":
     t = Thread(target=run_web)
     t.start()
     run_bot()
+
